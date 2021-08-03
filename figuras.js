@@ -72,7 +72,18 @@ return PI*(radio*radio);
 
 console.groupEnd();
 
-
+function validarlados(a,b,c){
+    let Isosceles=0;
+    if(a == b)
+        Isosceles=1;
+    else if(a == c)
+        Isosceles=1;
+    else if(b == c)
+        Isosceles=1;
+    else
+        Isosceles=0;
+    return Isosceles;
+}
 
 
 
@@ -93,3 +104,32 @@ function calcularareaCuadrada(){
     const area = areaCuadrada(value);
     alert(area);
 } 
+
+function calcularAltura(){
+    const lado1 = document.getElementById("Inputtriangulo1").value;
+    const lado2 = document.getElementById("Inputtriangulo2").value;
+    const lado3 = document.getElementById("Inputtriangulo3").value;
+
+    let altura=0;
+    let EsIsosceles=validarlados(lado1,lado2,lado3);
+    alert(EsIsosceles);
+    if (EsIsosceles==1){
+            if(lado1 == lado2)
+            {
+                altura=Math.sqrt((lado1*lado1) - ((lado3*lado3)/4) );
+            }
+            if(lado1 == lado3)
+            {
+                altura=Math.sqrt((lado1*lado1) - ((lado2*lado2)/4) );
+            }
+            if(lado2 == lado3)
+            {
+                altura=Math.sqrt((lado2*lado2) - ((lado1*lado1)/4) );
+            }
+            alert("La altura es :"+ altura);
+    }
+    else{
+        alert('NO ES Isosceles');
+    }
+
+}
