@@ -71,3 +71,25 @@ return PI*(radio*radio);
 
 
 console.groupEnd();
+
+
+
+
+
+
+//INTERACTUAR HTML Y JS
+
+function calcularperimetroCuadrado(){ //LO QUE SE RECIBE SE LLAMAN PARAMETROS
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+} 
+
+
+function calcularareaCuadrada(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    const area = areaCuadrada(value);
+    alert(area);
+} 
