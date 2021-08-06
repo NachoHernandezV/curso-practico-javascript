@@ -112,7 +112,7 @@ function calcularAltura(){
 
     let altura=0;
     let EsIsosceles=validarlados(lado1,lado2,lado3);
-    alert(EsIsosceles);
+
     if (EsIsosceles==1){
             if(lado1 == lado2)
             {
