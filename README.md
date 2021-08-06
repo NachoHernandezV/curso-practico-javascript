@@ -21,6 +21,16 @@
 
 
 
+#Taller #3: Promedio
+
+--Primer paso: Definir las formulas
+
+-- Segundo Paso: Implementar las formulas en JS
+
+--Tercer paso: Crear Funciones
+
+--Cuarto paso: Integrar JS con HTML
+
 
 
 
